@@ -85,7 +85,7 @@ mkdir -p docs
 ### 5. Ingest Documents (IMPROVED)
 ```bash
 cd backend
-python ingest_documents_improved.py
+python ingest_documents.py
 ```
 
 ### 6. Run
@@ -93,7 +93,7 @@ python ingest_documents_improved.py
 **Terminal 1 - Backend:**
 ```bash
 cd backend
-python app_improved.py
+python app.py
 ```
 
 **Terminal 2 - Discord Bot:**
@@ -109,27 +109,6 @@ node bot.js
 
 ---
 
-## 📊 Accuracy Improvements 
-
-| Feature | Basic | Improved | Change |
-|---------|-------|----------|--------|
-| Embedding Model | 384-dim | 768-dim | +100% |
-| Search Type | Semantic | Hybrid | Better |
-| Chunk Size | 500 | 800 | +60% |
-| Overlap | 50 | 200 | +300% |
-| Temperature | 0.7 | 0.3 | More accurate |
-| Retrieved Docs | 3 | 5 | +67% |
-| **Accuracy** | **65%** | **90%** | **+25%** |
-
-**Key improvements:**
-1. Better embedding model (all-mpnet-base-v2)
-2. Hybrid search (semantic + keyword)
-3. Larger chunks with more overlap
-4. Improved prompting
-5. Lower temperature
-6. More context retrieval
-
----
 
 ## 📁 Project Structure
 
@@ -146,8 +125,7 @@ discord-rag-bot/
 ├── assets/
 │   └── Architecture Diagram.png
 ├── docs/                            ← Put PDFs here
-├── .env.example                     ← Configure this
-└── docker-compose.yml
+└── .env.example                     ← Configure this
 ```
 
 ---
@@ -230,13 +208,6 @@ pip install -r requirements.txt
 
 ---
 
-## 🎓 Assignment Coverage
-
-✅ **Data Scientist:** RAG implementation, embeddings, vector search  
-✅ **Backend Engineer:** Flask API, Docker, logging, monitoring  
-✅ **Frontend Engineer:** Discord bot, UX, feedback system
-
----
 
 ## 🚀 Tech Stack
 
